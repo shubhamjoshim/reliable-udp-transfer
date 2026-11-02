@@ -2,7 +2,8 @@ receiver
 sender
 controller
 *.o
-*.txt
+*.txt 
+!CMakeLists.txt
 *.pdf
 *.png
 *.jpg
