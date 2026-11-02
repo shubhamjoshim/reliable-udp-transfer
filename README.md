@@ -2,7 +2,7 @@ Reliable UDP Transfer with SDN Failover
 
 This project implements a reliable data transfer protocol over UDP using Stop-and-Wait ARQ and demonstrates a dynamic SDN-style network failover using a custom C-based controller. Originally designed for Kathara, this lab has been successfully ported to Mininet to allow for strict, namespace-isolated point-to-point link control.
 
-🚀 Features
+Features
 
 Stop-and-Wait ARQ: Custom C implementation of a reliable UDP file transfer mechanism that handles packet loss, timeouts, and ACKs.
 
@@ -12,7 +12,7 @@ Dynamic Failover: A C-based controller that monitors network health and dynamica
 
 Simulated Packet Loss: The primary path enforces an artificial 5% packet drop rate to stress-test the Stop-and-Wait ARQ retransmission logic.
 
-🗺️ Network Topology
+Network Topology
 
 The network consists of two hosts (h1, h2) and two routers (r1, r2) arranged in a diamond topology:
 
@@ -31,7 +31,7 @@ r1 (Router 1): Primary routing path (subject to 5% packet loss).
 
 r2 (Router 2): Backup routing path.
 
-🛠️ Prerequisites
+Prerequisites
 
 To run this simulation, you will need an Ubuntu/Debian Linux environment (WSL is supported) with the following installed:
 
@@ -43,7 +43,7 @@ gcc (To compile the C programs)
 
 Mininet m utility installed in /usr/local/bin/
 
-⚙️ How to Run the Failover Demonstration
+How to Run the Failover Demonstration
 
 1. Start the Mininet Topology
 
