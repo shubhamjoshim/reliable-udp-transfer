@@ -8,3 +8,5 @@ controller
 *.png
 *.jpg
 build/
+.DS_Store
+/build-linux/
